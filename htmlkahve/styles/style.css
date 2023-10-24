@@ -1,0 +1,128 @@
+.main-content article {
+  width: 20%;
+  height: 250px;
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 10px;
+  vertical-align: top;
+}
+.main-content form h1 {
+  color: brown;
+  text-align: center;
+}
+.custom-button {
+  background-color: brown;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 85%;
+  margin-top: 10px;
+}
+
+.custom-button:hover {
+  background-color: rgb(57, 107, 78);
+}
+
+.main-content form article figure label div {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.main-content form article figure label figcaption,
+.main-content form article figure label p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.main-content form article figure label p {
+  height: 100px;
+}
+@media (max-width: 768px) {
+  .main-content article {
+    width: 45%; /* Daha küçük ekranlarda genişlik ayarı */
+    margin-left: 5%; /* Daha küçük ekranlarda sol boşluk ayarı */
+    margin-top: 5px; /* Daha küçük ekranlarda üst boşluk ayarı */
+  }
+}
+.main-content form article figure label figcaption {
+  text-align: center;
+  font-weight: bold;
+}
+.main-content form article figure:hover {
+  background-color: rgb(57, 107, 78);
+  color: aliceblue;
+}
+
+.coffee-bean {
+  /* margin-top: 40px; */
+  margin-bottom: 15px;
+}
+.radio-select {
+  margin-top: 40px;
+  text-align: center;
+  padding-right: 50px;
+}
+.radio-select input[type="radio"],
+.radio-select label {
+  margin-right: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+.checkout-form {
+  padding: 15px;
+}
+
+.checkout-form .form-group input,
+.checkout-form .form-group input select,
+.checkout-form .form-group label {
+  width: 200px;
+  display: inline-block;
+}
+
+.checkout-form .form-group {
+  margin-bottom: 15px;
+}
+
+.checkout-form fieldset {
+  margin-bottom: 15px;
+}
+.checkout-form .fieldset-group .form-group input:last-child {
+  text-align: right;
+}
+.checkout-form .form-group input {
+  text-align: right;
+}
+.checkout-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-image {
+  display: flex;
+  justify-content: center; /* Resmi yatayda ortalar */
+  align-items: center;
+}
+.content-container {
+  display: flex; /* İçerikleri yatayda yan yana sıralar */
+  align-items: center; /* İçerikleri dikeyde ortalar */
+  width: auto;
+}
+.content-container form {
+  margin-left: 120px;
+  width: 50%;
+  margin-top: 260px;
+}
+.container {
+  margin-top: 40px;
+  text-align: center;
+  color: green;
+}
+.container span {
+  color: brown;
+  font-weight: bold;
+}
+.container a {
+  color: rgb(57, 107, 78);
+  font-weight: bold;
+}

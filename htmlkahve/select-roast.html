@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavrulma derecesini seç</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/ico" href="images/Logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <style></style>
+  </head>
+  <body>
+    <main class="main-content">
+      <section class="content-container">
+        <article class="center-image">
+          <figure>
+            <img src="images/roast.jpg" alt="Kahve Çekirdeği" />
+          </figure>
+        </article>
+        <form>
+          <h1>Kavrulma Derecesini Seç</h1>
+          <div class="radio-select">
+            <input type="radio" id="Hafif" name="kavrulmaDerecesi" />
+            <label for="Hafif">Hafif</label>
+            <input type="radio" id="Orta" name="kavrulmaDerecesi" />
+            <label for="Orta">Orta</label>
+            <input type="radio" id="Koyu" name="kavrulmaDerecesi" />
+            <label for="Koyu">Koyu</label>
+          </div>
+          <button
+            class="custom-button"
+            formaction="select-size.html"
+            type="submit"
+          >
+            İleri
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

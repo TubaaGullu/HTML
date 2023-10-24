@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kahveni Seç</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/ico" href="images/Logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo">
+        <img src="images/Logo.png" width="100" height="80" alt="logo" />
+      </a>
+    </header>
+    <main>
+      <section class="main-content">
+        <form>
+          <h1>Kahveni Seç</h1>
+          <article>
+            <figure>
+              <label for="americano">
+                <div>
+                  <img
+                    src="images/ameriicano.jpg"
+                    style="background-color: white"
+                    alt="Americano"
+                    width="100"
+                    height="100"
+                  />
+                  <input type="radio" id="americano" name="kahve" />
+                </div>
+                <figcaption>Americano.</figcaption>
+                <p>Sıcak su ile inceltilmiş yoğun espresso lezzeti</p>
+              </label>
+            </figure>
+          </article>
+          <article>
+            <figure>
+              <label for="turkKahvesi">
+                <div>
+                  <img
+                    src="images/tkahve.png"
+                    alt="Türk kahvesi"
+                    width="100"
+                    height="100"
+                  />
+                  <input type="radio" id="turkKahvesi" name="kahve" />
+                </div>
+                <figcaption>Türk kahvesi.</figcaption>
+                <p>
+                  Geleneksel pişirme kültürüne sadık kalarak pişirilen bol
+                  köpüklü Türk kahvesi
+                </p>
+              </label>
+            </figure>
+          </article>
+          <article>
+            <figure>
+              <label for="flatWhite">
+                <div>
+                  <img
+                    src="images/flatwhite.png"
+                    alt="Flat White"
+                    width="100"
+                    height="100"
+                  />
+                  <input type="radio" id="flatWhite" name="kahve" />
+                </div>
+                <figcaption>Flat White.</figcaption>
+                <p>
+                  Daha yoğun bir kahve deneyimi için ekstra espresso ile
+                  hazırlanarak latte sanatı ile tamamlanmış latte
+                </p>
+              </label>
+            </figure>
+          </article>
+          <article>
+            <figure>
+              <label for="latte">
+                <div>
+                  <img
+                    src="images/latte.jpg"
+                    alt="Latte"
+                    width="100"
+                    height="100"
+                  />
+                  <input type="radio" id="latte" name="kahve" />
+                </div>
+                <figcaption>Latte.</figcaption>
+                <p>
+                  Zengin espresso, buharla ısıtılmış kadifemsi süt ve süt
+                  köpüğünün dengeli buluşması
+                </p>
+              </label>
+            </figure>
+          </article>
+          <article>
+            <figure>
+              <label for="caramelMacchiato">
+                <div>
+                  <img
+                    src="images/caramelMacchiato.jpg"
+                    alt="Caramel Macchiato"
+                    width="100"
+                    height="100"
+                  />
+                  <input type="radio" id="caramelMacchiato" name="kahve" />
+                </div>
+                <figcaption>Caramel Macchiato.</figcaption>
+                <p>
+                  Vanilya şurubu üzerine buharla özenle ısıtılmış süt, süt
+                  köpüğü ve espresso dokunuşu, karamel sosla süslenerek sunulur.
+                </p>
+              </label>
+            </figure>
+          </article>
+          <article>
+            <figure>
+              <label for="filtreKahve">
+                <div>
+                  <img
+                    src="images/filtrekahve.jpg"
+                    alt="Filtre kahve"
+                    width="100"
+                    height="100"
+                  />
+                  <input type="radio" id="filtreKahve" name="kahve" />
+                </div>
+                <figcaption>Filtre Kahve.</figcaption>
+                <p>Demlenmiş, dengeli, yoğun filtre kahve</p>
+              </label>
+            </figure>
+          </article>
+          <br />
+          <button
+            class="custom-button"
+            formaction="select-bean.html"
+            type="submit"
+          >
+            İleri
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kahve çekirdeği seç</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/ico" href="images/Logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="coffee-bean"
+        src="images/bean.jpg"
+        width="100%"
+        height="300"
+        alt="Kahve Çekirdeği"
+      />
+    </header>
+    <main class="main-content">
+      <section>
+        <form>
+          <h1>Kahve Çekirdeği Seç</h1>
+          <div class="radio-select">
+            <input type="radio" id="Arabica" name="cekirdek" />
+            <label for="Arabica"> Arabica</label>
+            <input type="radio" id="Colombia" name="cekirdek" />
+            <label for="Colombia"> Colombia</label>
+            <input type="radio" id="Ethiopia" name="cekirdek" />
+            <label for="Ethiopia"> Ethiopia</label>
+          </div>
+          <button
+            class="custom-button"
+            formaction="select-roast.html"
+            type="submit"
+          >
+            İleri
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

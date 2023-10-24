@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ödeme yap</title>
+    <link rel="icon" type="image/ico" href="images/Logo.png" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="checkout-body">
+    <main class="main-content">
+      <section class="container">
+        <form action="" class="checkout-form">
+          <h1>Ödeme</h1>
+          <fieldset class="fieldset-group">
+            <legend>Kişisel Bilgiler</legend>
+            <table class="form-group">
+              <tr>
+                <td><label for="fullName">İsim Soyisim</label></td>
+                <td>
+                  <input
+                    autofocus
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    pattern="[A-Za-z ]{5,40}"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="eMail">Email</label></td>
+                <td><input type="email" id="eMail" name="eMail" required /></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset class="fieldset-group">
+            <legend>Teslimat Adresi</legend>
+            <table class="form-group">
+              <tr>
+                <td><label for="city">Şehir</label></td>
+
+                <td>
+                  <p>
+                    <select name="city" id="city" required>
+                      <option value="">Lütfen Sehir Seçin</option>
+                      <option value="06">Ankara</option>
+                      <option value="34">İstanbul</option>
+                      <option value="35">İzmir</option>
+                    </select>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="county">İlçe</label></td>
+
+                <td>
+                  <select name="county" id="county" required>
+                    <option value="">Lütfen İlçe Seçin</option>
+                    <option value="06">Çankaya</option>
+                    <option value="34">Kadıköy</option>
+                    <option value="35">Karşıyaka</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="address1">Teslimat Adresi</label></td>
+                <td>
+                  <textarea
+                    name="address1"
+                    id="address1"
+                    cols="30"
+                    rows="5"
+                    minlength="30"
+                    maxlength="200"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="address2">Fatura Adresi</label></td>
+                <td>
+                  <textarea
+                    name="address2"
+                    id="address2"
+                    cols="30"
+                    rows="5"
+                    minlength="30"
+                    maxlength="200"
+                  ></textarea>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <input type="checkbox" name="sameAdress" id="sameAdress" />
+                </td>
+                <td>
+                  <label for="sameAdress"
+                    >Teslimat Adresi ile Fatura Adresim Aynı</label
+                  >
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+
+          <fieldset>
+            <legend>Ödeme Bilgileri</legend>
+            <table class="payment-method">
+              <tr>
+                <td>
+                  <input type="radio" name="paymentMethod" id="masterCard" />
+                </td>
+                <td>
+                  <label for="masterCard">Master Card</label>
+                </td>
+                <td>
+                  <input type="radio" name="paymentMethod" id="visaCard" />
+                </td>
+                <td>
+                  <label for="visaCard">Visa Card</label>
+                </td>
+                <td>
+                  <input type="radio" name="paymentMethod" id="debitCard" />
+                </td>
+                <td>
+                  <label for="debitCard">Debit Card</label>
+                </td>
+              </tr>
+            </table>
+
+            <table class="form-group">
+              <tr>
+                <td><label for="nameOnCard">Kart Uzerindeki İsim</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="nameOnCard"
+                    name="nameOnCard"
+                    pattern="[A-Za-z ]{5,40}"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="numberNo">Kart Numarası</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="numberNo"
+                    name="numberNo"
+                    pattern="[0-9]{16}"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="expiredate">Son Kullanma Tarihi</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="expiredate"
+                    name="expiredate"
+                    pattern="^(0[1-9]|1[0-2])\/[0-9]{2}$"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="cvvNumber">Güvenlik Numarası</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="cvvNumber"
+                    name="cvvNumber"
+                    pattern="[0-9]{3,3}"
+                    required
+                  />
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+          <button formaction="success.html" class="custom-button" type="submit">
+            Ödeme Yap
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

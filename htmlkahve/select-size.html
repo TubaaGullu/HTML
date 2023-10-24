@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bardak Boyunu seç</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/ico" href="images/Logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <section class="content-container">
+        <article class="center-image">
+          <figure>
+            <img src="images/size.jpg" alt="Bardak Boyu" />
+          </figure>
+        </article>
+        <form>
+          <h1>Bardak Boyu Seç</h1>
+          <div class="radio-select">
+            <input type="radio" id="kücük" name="boy" />
+            <label for="kücük">Küçük Boy</label>
+            <input type="radio" id="orta" name="boy" />
+            <label for="orta">Orta Boy</label>
+            <input type="radio" id="buyuk" name="boy" />
+            <label for="buyuk">Büyük Boy</label>
+          </div>
+          <button
+            class="custom-button"
+            formaction="checkout.html"
+            type="submit"
+          >
+            İleri
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
